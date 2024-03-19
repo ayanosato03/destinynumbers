@@ -1,1 +1,50 @@
 @import "bootstrap";
+
+.navbar {
+  background-color: #FFEEFF; 
+  padding-top: 20px;    
+  padding-bottom: 20px; 
+}
+
+/******************************************************** 
+　トップページ 
+********************************************************/
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  font-family: "IM Fell French Canon SC", serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.hero-items {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: calc(50% - 35px);
+  width: 100%;
+  padding: 0 60px;
+}
+
+.hero-text__main {
+  font-size: 70px;
+  color: #4B0082;
+  }
+
+.hero-text__sub {
+  margin-top: 10px;
+  padding-left: 6px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #330033
+}
+
+
+.img-fluid{
+  opacity: 60%;
+  object-fit: cover;
+
+}
