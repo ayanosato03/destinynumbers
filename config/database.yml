@@ -20,7 +20,6 @@ default: &default
 
 development:
   <<: *default
-   adapter: mysql2
   username: root
   password:
   host: localhost
