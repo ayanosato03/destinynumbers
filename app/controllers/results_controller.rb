@@ -18,7 +18,7 @@ class ResultsController < ApplicationController
     else
       render :index, status: :unprocessable_entity
     end
-    end
+   end
   end
 
 

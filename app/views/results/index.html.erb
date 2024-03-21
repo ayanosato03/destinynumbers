@@ -11,14 +11,14 @@
     <div class="hero-text__sub">個人の生年月日を計算式に当てはめて特定の数字を導き出し<br>
     そこから性格・才能・運命・運勢・使命・人生のテーマなどを知ることができます</div>
     </div>
-    <%= form_with url: results_path, method: :post, class: 'form-main', local: true do |f| %>
+    <%= form_with model:@user,url: results_path, method: :post, class: 'form-main', local: true do |f| %>
   <div class="form-group">
     <div class='form-text-wrap'>
      <label class="form-text">お名前</label>
      <span class="indispensable">必須</span>
      </div>
      <div class='input-name-wrap'>
-      <%= f.text_area :name, class:"input-name", id:"name", placeholder:"例) 太郎" %>
+      <%= f.text_field :name, class:"input-name", id:"name", placeholder:"例) 太郎" %>
      </div>
   </div>
   <div class="form-group">
