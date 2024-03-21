@@ -9,6 +9,11 @@
 /******************************************************** 
 　トップページ 
 ********************************************************/
+.index-main{
+  width: 100%;
+  height: 700px;
+}
+
 
 .hero {
   position: relative;
@@ -26,13 +31,17 @@
   position: absolute;
   top: calc(50% - 35px);
   width: 100%;
+  height: 100%;
   padding: 0 60px;
+  margin-top: 30px;
+
 }
 
 .hero-text__main {
   font-size: 70px;
   color: #4B0082;
-  }
+
+}
 
 .hero-text__sub {
   margin-top: 10px;
@@ -44,7 +53,207 @@
 
 
 .img-fluid{
-  opacity: 60%;
+  opacity: 50%;
   object-fit: cover;
 
 }
+
+.form-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: relative;
+  z-index: 500; 
+
+
+}
+
+.form-group {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 30px;
+}
+
+.form-text-wrap{
+    width: 300px; 
+    height: 35px;
+    font-family: "IM Fell French Canon SC", serif;
+    font-style: normal;
+    margin-left: 30px;
+
+}
+
+.form-text{
+  color: #330033;
+  font-weight: bold;
+  font-size: 25px;
+
+
+}
+
+.indispensable{
+  color: #660099;
+  font-size: 20px;
+  margin-left: 10px;
+  font-weight: bold;
+
+}
+
+.input-name{
+  height: 30px;
+  margin-top: 10px;
+}
+
+.input-birth-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 45px;
+
+}
+
+
+.select-birth {
+  width: 100%; 
+  height: 30px; 
+  margin-top: 10px;
+}
+
+.birth-btn-wrap {
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.register-btn {
+  margin-left: 100px;
+  margin-top: -10px;  
+
+}
+
+
+.register-btn input[type='submit'] {
+  width: 200px;  
+  height: 70px;  
+  color: #660099;
+  border: 1px solid #330033;
+  font-weight: bold;
+  font-family: "IM Fell French Canon SC", serif;
+  font-style: normal;
+  font-size: 20px;
+  
+}
+
+ /* タブレット表示時 */
+ @media (max-width: 1024px) {
+  .index-main {
+    height: auto; 
+    padding-top: 50px; 
+  }
+
+  .hero {
+    height: auto; 
+    padding-top: 50px; 
+  }
+
+  .hero-items {
+    flex-direction: column; 
+    align-items: center; 
+    padding: 0 20px;
+    text-align: center; 
+    margin-top: 0; 
+  }
+
+  .hero-text__main {
+    font-size: 50px; 
+  }
+
+  .hero-text__sub {
+    font-size: 18px; 
+  }
+
+  .img-fluid {
+    height: auto; 
+    width: 100%; 
+  }
+
+  .form-main {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .form-group {
+    margin: 20px 0; 
+  }
+
+  .input-name,
+  .select-birth {
+    width: 100%; 
+  }
+
+  .register-btn {
+    margin-left: 0; 
+    margin-top: 20px; 
+    text-align: center; 
+  }
+
+  .register-btn input[type='submit'] {
+    width: 90%; 
+    height: 50px; 
+  }
+}
+
+ /* スマホ表示時 */
+  @media (max-width: 599px) {
+    .index-main {
+      padding-top: 30px; 
+    }
+  
+    .hero {
+      padding-top: 30px; 
+    }
+  
+    .hero-items {
+      padding: 0 10px; 
+      margin-top: 0; 
+    }
+  
+    .hero-text__main {
+      font-size: 40px; 
+    }
+  
+    .hero-text__sub {
+      font-size: 16px; 
+    }
+  
+    .img-fluid {
+      height: auto; 
+      width: 100%; 
+    }
+  
+    .form-main {
+      padding: 0 10px; 
+    }
+  
+    .form-group {
+      margin: 15px 0; 
+    }
+  
+    .input-name,
+    .select-birth {
+      width: 100%; 
+    }
+  
+    .register-btn {
+      margin-left: 0; 
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+    .register-btn input[type='submit'] {
+      width: 80%; 
+      height: 50px; 
+    }
+  }
