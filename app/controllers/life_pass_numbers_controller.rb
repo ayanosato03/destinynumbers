@@ -1,0 +1,2 @@
+class LifePassNumbersController < ApplicationController
+end

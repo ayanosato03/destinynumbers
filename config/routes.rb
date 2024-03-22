@@ -4,4 +4,7 @@ Rails.application.routes.draw do
     resources :results, only: [:index, :new, :create]
   end
   resources :results, only: [:index, :create, :show]
+
+  get 'life_pass_numbers', to: 'life_pass_numbers#show'
 end
+
