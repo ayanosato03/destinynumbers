@@ -21,6 +21,17 @@ class ResultsController < ApplicationController
     end
   end
 
+  def show
+    @fortune_number = params[:id].to_i
+
+    # 1〜9, 11, 22, 33 の範囲外は404エラーにする
+    unless (1..9).include?(@fortune_number) || [11, 22, 33].include?(@fortune_number)
+      render file: Rails.root.join('public/404.html'), status: 404, layout: false, content_type: 'text/html'
+    end
+
+    render template: "results/result#{@fortune_number}"
+  end
+
   private
 
   def user_params
