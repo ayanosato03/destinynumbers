@@ -35,7 +35,7 @@ class ResultsController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:name, :birthday)
+    params.require(:user).permit(:name, :birthday, results_attributes: [:calculation_result])
   end
 
   def result_params

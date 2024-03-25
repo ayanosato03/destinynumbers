@@ -1,4 +1,4 @@
-window.addEventListener('load', function(){
+function initializePage(){
   const birthdayYear = document.getElementById("user_birthday_1i");
   const birthdayMonth = document.getElementById("user_birthday_2i");
   const birthdayDay = document.getElementById("user_birthday_3i");
@@ -74,6 +74,8 @@ const birthdate = new Date(birthdayYear.value, birthdayMonth.value - 1, birthday
         break;
       }
       window.location.href = url;
-    });
   });
-  
+}
+
+window.addEventListener('turbo:load', initializePage);
+window.addEventListener('turbo:render', initializePage);
