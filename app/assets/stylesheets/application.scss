@@ -281,6 +281,26 @@ transform: translate(0, -50%);
 
 }
 
+.result-title2{
+  font-size:40px ;
+  font-weight: bold;
+  color: #c17be4;
+  padding: 10px;
+  position: absolute;
+  top: 20%;
+  transform: translate(0, -50%); 
+}  
+
+.result-title3{
+  font-size:40px ;
+  font-weight: bold;
+  color: #c17be4;
+  padding: 10px;
+  position: absolute;
+  top: 70%;
+  transform: translate(0, -50%); 
+}  
+
 .img-result {
   width: 980px;
   height: 300px;
@@ -288,6 +308,15 @@ transform: translate(0, -50%);
   opacity:60%;
 
 }
+
+.img-result3 {
+  width: 980px;
+  height: 300px;
+  object-fit: cover;
+  opacity:40%;
+
+}
+
 
 .result-contents{
   font-family: "IM Fell French Canon SC", serif;
