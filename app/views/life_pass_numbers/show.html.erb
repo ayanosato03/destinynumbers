@@ -1,2 +1,58 @@
 <%= render "shared/header" %>
-ナンバー紹介
+
+<div class="detail-main">
+<div class="detail-title">数秘術について</div>
+<div class="detail-essence1">
+数秘術とは西洋占星術や易学等と並ぶ世界最古の占術のひとつです。<br>
+数秘術とは“占術”であるだけでなく、世界で最も古い“分析学”でもあります。<br>
+占い方は生年月日を1つずつのバラバラの数字に分解し、すべて足していきます。<br>
+合計が2ケタ以上の数字になった場合、それをまた分解して1桁になるまで足しますが<br>
+11、22、33はマスターナンバーと呼ばれるためそのままで数字は確定します。<br>
+1～9、11、22、33の数字から性格や才能・運命・運勢・使命・人生のテーマなどを知ることができます。<br></div>
+
+<div class="detail-title">各ナンバーについて</div>
+<div class="detail-essence1">
+ <%= link_to result_path(1) do %>
+    <%= image_tag "Number1.png", alt: "image" %>
+  <% end %>
+ <%= link_to result_path(2) do %>
+   <%= image_tag "Number2.png", alt: "image" %>
+ <% end %>
+ <%= link_to result_path(3) do %>
+    <%= image_tag "Number3.png", alt: "image" %>
+ <% end %>
+ <%= link_to result_path(4) do %>
+    <%= image_tag "Number4.png", alt: "image" %>
+ <% end %>
+ <%= link_to result_path(5) do %>
+    <%= image_tag "Number5.png", alt: "image" %>
+ <% end %>
+ <%= link_to result_path(6) do %>
+    <%= image_tag "Number6.png", alt: "image" %>
+ <% end %>
+ <%= link_to result_path(7) do %>
+    <%= image_tag "Number7.png", alt: "image" %>
+ <% end %>
+ <%= link_to result_path(8) do %>
+    <%= image_tag "Number8.png", alt: "image" %>
+ <% end %>
+ <%= link_to result_path(9) do %>
+    <%= image_tag "Number9.png", alt: "image" %>
+ <% end %>
+ <%= link_to result_path(11) do %>
+    <%= image_tag "Number11.png", alt: "image" %>
+ <% end %>
+ <%= link_to result_path(22) do %>
+    <%= image_tag "Number22.png", alt: "image" %>
+ <% end %>
+ <%= link_to result_path(33) do %>
+    <%= image_tag "Number33.png", alt: "image" %>
+ <% end %>
+
+
+ <ul class="nav nav-underline">
+    <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="/">Back</a></li>
+  </ul>
+  </div>
+</div>
