@@ -7,6 +7,11 @@ destinynumbers
 ## URL
 https://destinynumbers.onrender.com
 
+## テスト用アカウント
+
+Basic認証パスワード：admin
+
+Basic認証ID：2222
 
 ## 利用方法
 1.トップページにある名前を入力する
